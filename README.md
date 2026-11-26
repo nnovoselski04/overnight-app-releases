@@ -41,7 +41,7 @@ The agent reads [FOR-AI-ASSISTANTS.md](FOR-AI-ASSISTANTS.md) and follows it.
 
 ## Updates
 
-Overnight updates itself. A new version downloads in the background and goes in when you close the app.
+Overnight updates itself. A new version downloads in the background. It installs only when you press Update now at the top of the window.
 
 ## If something is wrong
 
