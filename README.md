@@ -14,7 +14,7 @@ your Skool sign-in when it opens. Style packs are not here; the app downloads th
 Or paste this into PowerShell. It downloads the same installer, checks it, and runs it:
 
 ```powershell
-irm https://raw.githubusercontent.com/nnovoselski04/overnight-app-releases/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/nnovoselski04/overnight-app-releases/main/get-overnight.ps1 | iex
 ```
 
 ## Mac
@@ -22,7 +22,7 @@ irm https://raw.githubusercontent.com/nnovoselski04/overnight-app-releases/main/
 When a Mac version is out, paste this into Terminal:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/nnovoselski04/overnight-app-releases/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/nnovoselski04/overnight-app-releases/main/get-overnight.sh | bash
 ```
 
 ## Let Claude do it
@@ -37,7 +37,7 @@ Install Overnight on this computer. The guide is here: https://github.com/nnovos
 Fix Overnight for me: https://github.com/nnovoselski04/overnight-app-releases
 ```
 
-The agent reads [AGENTS.md](AGENTS.md) and follows it.
+The agent reads [FOR-AI-ASSISTANTS.md](FOR-AI-ASSISTANTS.md) and follows it.
 
 ## Updates
 
@@ -48,3 +48,5 @@ Overnight updates itself. A new version downloads in the background and goes in 
 Run the install command again: it puts the newest Overnight on over the one you have. Your videos, settings and
 sign-ins stay. To check a download by hand, each release has `SHA256SUMS.txt`; in PowerShell:
 `Get-FileHash .\Overnight-Setup.exe`.
+
+<!-- Copyright (c) 2026 NDX Group. All rights reserved. Overnight is proprietary software: see LICENSE. -->
