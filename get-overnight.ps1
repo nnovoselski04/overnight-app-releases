@@ -6,7 +6,7 @@
 # OVERNIGHT_INSTALL_FROM: tests only, another address that holds SHA256SUMS.txt and Overnight-Setup.exe.
 # OVERNIGHT_INSTALL_DRY: tests only, download and check but do not run the installer.
 & {
-    $ErrorActionPreference = 'Stop'
+    $ErrorActionPreference = [System.Management.Automation.ActionPreference]::Stop
     $ProgressPreference = 'SilentlyContinue'
     $latest = 'https://github.com/nnovoselski04/overnight-app-releases/releases/latest/download'
     if ($env:OVERNIGHT_INSTALL_FROM) { $latest = $env:OVERNIGHT_INSTALL_FROM.TrimEnd('/') }
